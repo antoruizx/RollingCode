@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Estructura</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<!-- Es el cuerpo de mi pagina y donde voy a montar la estructura que el usuario va a visualizar -->
+<body>
+    <!-- Titulo, logo de la página y la barra de navegación -->
+    <header id="headerPrincipal">
+        <nav>
+        <!--links internos del proyecto-->
+        <!--Imagen actuando como link-->
+        <!--<a href="/index.html" id="home">
+            <img src="/assets/Images/logo/logoRC2.png" alt="Logo Rolling Code" width="220px"></a>-->
+            <a class="botonesNav" href="#">Inicio</a>
+            <a class="botonesNav" href="pages/gallery/gallery.html">Galeria</a>
+            <a class="botonesNav" href="pages/contact/contacto.html">Contacto</a>
+            <a class="botonesNav" href="pages/product/cars/product.html">Productos</a>
+            <a class="botonesNav" href="pages/about-us/about-us.html">Acerca de</a>
+        </nav>
+        <div id="cabecera">
+            <h1 class="titulos"> Curso RollingCode FullStack</h1>
+            <h1 class="titulos">Mi primer página web</h1>
+        </div>
+    </header>
+     <!-- Contenido principal de mi página web -->
+     <main>
+         <div class="container">
+             <div>
+                 <img src="/assets/image/mern.jpg" alt="banner-mern">
+             </div>
+         </div>
+        <sections>
+            <!--Links internos de la pagina-->
+            <div class="main-links">
+                <a class="coments" href="#section-commentary">Sección comentarios</a>
+                <a class="coments" href="#backEnd">Ir a Sección BackEnd</a>
+                <a class="coments" href="#frontEnd">Ir a sección FrontEnd</a>
+            </div>
+        <section>
+            <header>
+                <h2>¿En que consiste ser desarrollador FullStack?</h2>
+                <div class="text-center">
+                    <img src="/assets/image/happy.gif" alt="happy developer" width="400" class="img-center">
+                </div>
+
+                <p class="estiloParrafo">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequatur tenetur explicabo minima vel ducimus provident, odio ex ea obcaecati quos maxime hic nisi libero esse officiis nesciunt neque architecto.
+                </p>
+                <article id="frontEnd">
+                    <header>
+                        <h3 class="titulos">FrontEnd</h3>
+                    </header>
+                    <img src="/assets/image/frontend.png" alt="">
+                    <p class="estiloParrafo">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae suscipit laborum vel voluptates unde saepe minus deserunt sit sequi iste, consectetur ipsa ipsam quia molestiae adipisci? Tenetur, reprehenderit maiores!
+                    </p>
+                    <h4>
+                      El orden de los lenguajes que se deben aprender en frontend es el siguiente:
+                     </h4>
+                    <ol>
+                        <li>
+                            HTML
+                            <ul>
+                                <li>
+                                    <a href="/pages/text-format/text-format.html">
+                                    Formato de texto
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/pages/tables/tables.html">Tablas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>CSS
+                            <ul>
+                                <li>
+                                    <a href="/pages/css-prop/position.html">Position</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/css-prop/display.html">Display
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>bBoostrap</li>
+                        <li>Materialize</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                    </ol>
+            </article>
+
+            <article id="backEnd">
+                <header>
+                  <h3>BackEnd</h3>
+                </header>
+                <div class="text-center">
+                    <img src="/assets/image/backend.jpg" alt="">
+                </div>
+                <p class="estiloParrafo">
+                    <h4>Párrafo 1</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusamus? Id adipisci eveniet eligendi eum. Vero, provident ut beatae quisquam recusandae corrupti molestiae, itaque temporibus deleniti, labore at rem ex?
+                </p>
+                <p class="estiloParrafo">
+                    <h4>Párrafo 2</h4>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur magni laboriosam laudantium, vel amet maxime!
+                </p>
+                <p>
+                    In expedita inventore pariatur quos? Voluptates velit nostrum quaerat corporis beatae repudiandae doloribus. Non, quaerat.
+                    Aspernatur tenetur numquam eos quidem aperiam libero voluptatum sit impedit possimus architecto.
+                </p>
+                <h4>Los lenguajes que utilizaremos en el BackEnd son:</h4>
+                <ul>
+                    <li>Node JS</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </article>
+        </section>
+        <section id="section-commentary">
+        <h3 id=commentary-header>
+            Comentarios
+        </h3>
+        <article>
+            Comentario de Lore
+        </article>
+        </section>
+        <section>
+            Temas relacionados
+        </section>
+    </div>
+        <aside>
+            <ul>
+                <li>Curso React avanzado
+                    Tableros Trello
+                </li>
+                <li>Curso Ingles</li>
+                <li>Campus RollingCode</li>
+                <li>W3School CSS</li>
+            </ul>
+        </aside>
+    </main>
+    <!--Pie de mi página-->
+    <footer>
+        <div class="w-33 section">
+            <ul>
+                <li>Facebook: <a href="htpp://www.facebook.com">Antonella Ruiz</a></li>
+                <li>LinkedIn: <a href="htpp://www.linkedin.com">Perfin profesional</a></li>
+                <li><a href="mailto:antoruizx@gmail.com">Contactar</a></li>
+                <li><a href="htpp://www.youtube.com">Ir a Youtube</a></li>
+            </ul>
+        </div>
+        <div class="w-33 text-center">
+            <p class="copyFooter">&copy - Curso RollingCode - Comisión 12i - 2021</p>
+        </div>
+        <div class="w-33 section">
+        
+
+        </div>
+    </footer>
+</body>
+</html>
